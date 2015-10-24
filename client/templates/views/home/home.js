@@ -5,7 +5,9 @@
  * Roxie theme v1.1
 ------------------------------*/
 
-ClassSchedule.insert({ title: "Bootcamp – Farsley and Pudsey", startDateTime: Date.now(), finishDateTime: Date.now(), venueTitle: "Leeds"});
+//ClassSchedule.insert({ title: "Bootcamp – Farsley and Pudsey", startDateTime: Date.now(), finishDateTime: Date.now(), venueTitle: "Leeds"});
+
+
 
 console.log("New item add to the collection!");
 
