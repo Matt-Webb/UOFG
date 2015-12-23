@@ -1,11 +1,11 @@
-// /*------------------------------
-//  * Copyright 2014 Pixelized
-//  * http://www.pixelized.cz
-//  *
-//  * Roxie theme v1.1
-// ------------------------------*/
-//
-// //FIXED NAVBAR
+/*------------------------------
+ * Copyright 2014 Pixelized
+ * http://www.pixelized.cz
+ *
+ * Roxie theme v1.1
+------------------------------*/
+
+//FIXED NAVBAR
 $(window).scroll(function(){
 	if($(window).width() > 991) {
 		if($(window).scrollTop() > 50) {
@@ -148,6 +148,7 @@ $(document).ready(function() {
 		singleItem : true,
 		pagination : false,
 		transitionStyle : "fade",
+		autoPlay: 5000,
 		slideSpeed : 500,
 		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
   	});
@@ -259,6 +260,23 @@ $(document).ready(function() {
 	);
 
 	//GOOGLE MAP
-
+	// var myLatlng = new google.maps.LatLng(40.710968,-74.0084713);
+	// var mapOptions = {
+	//   zoom: 17,
+	//   center: myLatlng,
+	//   navigationControl: false,
+	//   mapTypeControl: false,
+	//   scaleControl: false,
+	//   draggable: true,
+	//   scrollwheel: false
+	// }
+	//
+	// var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+	//
+	// var marker = new google.maps.Marker({
+	// 	position: myLatlng,
+	// 	map: map,
+	// 	title:"Your Marker!"
+	// });
 
 });

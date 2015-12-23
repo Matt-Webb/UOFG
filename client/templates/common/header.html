@@ -10,12 +10,12 @@
               <div class="header-item"><i class="fa fa-phone"></i> 07964 787 981</div>
           </div>
           <div class="pull-right">
+            <div class="header-item">{{> loginButtons}}</div>
             <ul class="brands brands-inline brands-tn brands-circle main">
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                   <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
               </ul>
-              <div class="header-item"><a href="signin.html" class="pull-right"><i class="fa fa-user"></i>Sign in</a></div>
           </div>
       </div>
   </div>
@@ -23,82 +23,21 @@
 <header class="navbar yamm navbar-default navbar-static-top">
     <div class="container">
           <div class="navbar-header">
-              <!--a href="index.html" class="navbar-brand"><img src="image/logo.png" alt=""></a-->
+              <a href="{{pathFor 'homeIndex'}}" class="navbar-brand"><img class="max-logo-height" src="image/ukod_logo.png" alt=""></a>
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
           </div>
           <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav navbar-main-menu">
-                  <li class="dropdown active">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-chevron-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Default Option</a></li>
-                          <li><a href="index-image.html"><i class="fa fa-angle-double-right"></i>Option 1 (Static Image)</a></li>
-                          <li><a href="index-text.html"><i class="fa fa-angle-double-right"></i>Option 2 (Text Only)</a></li>
-                          <li><a href="index-application.html"><i class="fa fa-angle-double-right"></i>Application<span class="label label-warning">updated</span></a></li>
-                          <li><a href="index-product.html"><i class="fa fa-angle-double-right"></i>Product<span class="label label-warning">updated</span></a></li>
-                          <li><a href="index-eshop.html"><i class="fa fa-angle-double-right"></i>Eshop<span class="label label-warning">updated</span></a></li>
-                          <li><a href="index-coming-soon.html"><i class="fa fa-angle-double-right"></i>Coming Soon<span class="label label-warning">updated</span></a></li>
-                          <li><a href="index-search.html"><i class="fa fa-angle-double-right"></i>Search</a></li>
-                          <li><a href="index-portfolio.html"><i class="fa fa-angle-double-right"></i>Portfolio</a></li>
-                          <li><a href="index-event.html"><i class="fa fa-angle-double-right"></i>Event<span class="label label-danger">new</span></a></li>
-                      </ul>
+                  <li class="active">
+                      <a href="{{pathFor 'homeIndex'}}" class="dropdown-toggle">Home</a>
                   </li>
 
                   <li>
-                      <a href="features.html">Features</a>
+                      <a href="{{pathFor 'instructorList'}}">Instructors</a>
                   </li>
 
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Eshop <i class="fa fa-chevron-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="products1.html"><i class="fa fa-angle-double-right"></i>Grid Without Sidebar<span class="label label-warning">updated</span></a></li>
-                          <li><a href="products2.html"><i class="fa fa-angle-double-right"></i>Grid With Sidebar<span class="label label-warning">updated</span></a></li>
-                          <li><a href="products3.html"><i class="fa fa-angle-double-right"></i>List Without Sidebar<span class="label label-warning">updated</span></a></li>
-                          <li><a href="products4.html"><i class="fa fa-angle-double-right"></i>List With Sidebar<span class="label label-warning">updated</span></a></li>
-                          <li><a href="productdetail.html"><i class="fa fa-angle-double-right"></i>Product Detail<span class="label label-warning">updated</span></a></li>
-                          <li><a href="shoppingcart.html"><i class="fa fa-angle-double-right"></i>Shopping Cart</a></li>
-                      </ul>
-                  </li>
-
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <i class="fa fa-chevron-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="portfolio1.html"><i class="fa fa-angle-double-right"></i>Portfolio 2 Column Grid</a></li>
-                          <li><a href="portfolio2.html"><i class="fa fa-angle-double-right"></i>Portfolio 3 Column Grid</a></li>
-                          <li><a href="portfolio3.html"><i class="fa fa-angle-double-right"></i>Portfolio 4 Column Grid</a></li>
-                          <li><a href="portfolio4.html"><i class="fa fa-angle-double-right"></i>Portfolio 2 Column Grid Wide</a></li>
-                          <li><a href="portfolio5.html"><i class="fa fa-angle-double-right"></i>Portfolio 3 Column Grid Wide</a></li>
-                          <li><a href="portfolio6.html"><i class="fa fa-angle-double-right"></i>Portfolio 4 Column Grid Wide</a></li>
-                          <li><a href="portfolio7.html"><i class="fa fa-angle-double-right"></i>Portfolio Without Spaces</a></li>
-                          <li><a href="portfolio-post1.html"><i class="fa fa-angle-double-right"></i>Portfolio Post 1 (slider)</a></li>
-                          <li><a href="portfolio-post2.html"><i class="fa fa-angle-double-right"></i>Portfolio Post 2 (video)</a></li>
-                          <li><a href="portfolio-post3.html"><i class="fa fa-angle-double-right"></i>Portfolio Post 3 (audio)</a></li>
-                      </ul>
-                  </li>
-
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <i class="fa fa-chevron-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="blog1.html"><i class="fa fa-angle-double-right"></i>Blog Without Sidebar</a></li>
-                          <li><a href="blog2.html"><i class="fa fa-angle-double-right"></i>Blog Left Sidebar</a></li>
-                          <li><a href="blog3.html"><i class="fa fa-angle-double-right"></i>Blog Right Sidebar</a></li>
-                          <li><a href="blog-post1.html"><i class="fa fa-angle-double-right"></i>Blog Post Without Sidebar</a></li>
-                          <li><a href="blog-post2.html"><i class="fa fa-angle-double-right"></i>Blog Post Left Sidebar</a></li>
-                          <li><a href="blog-post3.html"><i class="fa fa-angle-double-right"></i>Blog Post Right Sidebar</a></li>
-                          <li><a href="blog4.html"><i class="fa fa-angle-double-right"></i>Blog 2 Column Grid</a></li>
-                          <li><a href="blog5.html"><i class="fa fa-angle-double-right"></i>Blog 3 Column Grid</a></li>
-                          <li><a href="blog6.html"><i class="fa fa-angle-double-right"></i>Blog 2 Column Grid (isotope)</a></li>
-                          <li><a href="blog7.html"><i class="fa fa-angle-double-right"></i>Blog 3 Column Grid (isotope)</a></li>
-                          <li><a href="blog8.html"><i class="fa fa-angle-double-right"></i>Blog Timeline</a></li>
-                      </ul>
-                  </li>
-
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <i class="fa fa-chevron-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="contact1.html"><i class="fa fa-angle-double-right"></i>Contact 1</a></li>
-                          <li><a href="contact2.html"><i class="fa fa-angle-double-right"></i>Contact 2</a></li>
-                      </ul>
+                  <li>
+                      <a href="{{pathFor 'scheduleList'}}">Schedule</a>
                   </li>
 
                   <li class="dropdown yamm-fw hidden-xs hidden-sm">
@@ -108,11 +47,11 @@
                             <div class="yamm-content">
                                   <div class="row">
                                       <div class="col-sm-6">
-                                        <h3>Our Latest Project</h3>
+                                        <h3>Our Latest Classes</h3>
                                           <div class="row">
                                             <div class="col-sm-6">
-                                              <img src="image/image_02.jpg" class="img-responsive" alt="">
-                                              <a href="portfolio-post1.html" class="btn btn-primary">Show Me</a>
+                                              <img src="image/ukod_logo.png" class="img-responsive" alt="">
+                                              <a href="portfolio-post1.html" class="btn btn-primary">Show All</a>
                                               </div>
                                               <div class="col-sm-6">
                                                 <p><b>Lorem ipsum dolor sit</b> amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat. Duis eu sapien auctor, bibendum ante ut, volutpat purus. </p>
@@ -120,14 +59,12 @@
                                           </div>
                                       </div>
                                       <div class="col-sm-3">
-                                        <h3>Features Pages</h3>
+                                        <h3>Locations</h3>
                                         <ul class="nav vertical-nav">
-                                            <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
-                                              <li><a href="pricing1.html"><i class="fa fa-angle-double-right"></i>Pricing 1</a></li>
-                                              <li><a href="pricing2.html"><i class="fa fa-angle-double-right"></i>Pricing 2</a></li>
-                                              <li><a href="pricingtable.html"><i class="fa fa-angle-double-right"></i>Pricing Table</a></li>
-                                              <li><a href="services1.html"><i class="fa fa-angle-double-right"></i>Services 1</a></li>
-                                              <li><a href="services2.html"><i class="fa fa-angle-double-right"></i>Services 2</a></li>
+                                            <li><a href="about.html"><i class="fa fa-angle-double-right"></i>Leeds</a></li>
+                                              <li><a href="pricing1.html"><i class="fa fa-angle-double-right"></i>Harrogate</a></li>
+                                              <li><a href="pricing2.html"><i class="fa fa-angle-double-right"></i>Bradford</a></li>
+                                              <li><a href="pricingtable.html"><i class="fa fa-angle-double-right"></i>Huddersfield</a></li>
                                           </ul>
                                       </div>
                                       <div class="col-sm-3">
@@ -140,83 +77,10 @@
                       </ul>
                   </li>
 
-                  <li class="">
-                      <a href="#" class="" data-toggle="dropdown">Join Now <i class="fa fa-chevron-down"></i></a>
-                  </li>
+
               </ul>
 
               <ul class="nav navbar-nav hidden-xs hidden-sm">
-                  <li class="dropdown shopping-cart-toggle">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i><span class="shopping-cart-counter">5</span></a>
-                      <ul class="dropdown-menu navbar-shopping-cart">
-                        <li>
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
-                                  </div>
-                                  <div class="col-md-8">
-                                    <a href="productdetail.html"><h3>Product Title</h3></a>
-                                  </div>
-                                  <div class="col-md-1">
-                                    <p>2x</p>
-                                  </div>
-                                  <div class="col-md-2">
-                                    <p class="price">$123</p>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
-                                  </div>
-                                  <div class="col-md-8">
-                                    <a href="productdetail.html"><h3>Product Title</h3></a>
-                                  </div>
-                                  <div class="col-md-1">
-                                    <p>2x</p>
-                                  </div>
-                                  <div class="col-md-2">
-                                    <p class="price">$123</p>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                            <div class="row">
-                                <div class="col-md-1">
-                                    <a href="#" class="delete"><i class="fa fa-times"></i></a>
-                                  </div>
-                                  <div class="col-md-8">
-                                    <a href="productdetail.html"><h3>Product Title</h3></a>
-                                  </div>
-                                  <div class="col-md-1">
-                                    <p>2x</p>
-                                  </div>
-                                  <div class="col-md-2">
-                                    <p class="price">$123</p>
-                                  </div>
-                              </div>
-                          </li>
-                          <li>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <p>Total price:</p>
-                                  </div>
-                                  <div class="col-md-2">
-                                    <p class="price">$369</p>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-md-6">
-                                    <a href="#" class="btn btn-info btn-block">Clear Cart</a>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <a href="shoppingcart.html" class="btn btn-danger btn-block btn-checkout">Checkout</a>
-                                  </div>
-                              </div>
-                          </li>
-                      </ul>
-                  </li>
 
                   <li class="dropdown search-form-toggle">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>

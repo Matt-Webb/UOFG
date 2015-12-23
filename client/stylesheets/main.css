@@ -5699,3 +5699,12 @@ only screen and (device-width: 800px),
 only screen and (max-width: 767px) {
 	.flex-video { padding-top: 0; }
 }
+
+.max-logo-height {
+	margin-top: 8px;
+	max-height: 50px;
+}
+
+#login-dropdown-list .dropdown-menu {
+	z-index: 10000;
+}

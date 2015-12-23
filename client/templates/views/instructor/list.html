@@ -1,0 +1,17 @@
+<template name="instructorList">
+
+<section class="content">
+    <h1>Your Instructors</h1>
+
+    {{#each instructor}}
+      <div class="col-md-2 col-lg-2 col-xs-3">
+        <p><a href="{{ pathFor 'instructorShow'}}">{{ name }}</a></p>
+        <p><img src="{{ image }}" class="img-responsive img-thumbnail" width="100px" height="100px" /></p>
+      </div>
+    {{/each}}
+
+  </section>
+
+</template>
+
+<!-- http://plnkr.co/edit/07biqqYxZU7HKYO1KxWO?p=preview -->
